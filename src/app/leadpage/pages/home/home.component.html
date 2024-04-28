@@ -1,1 +1,119 @@
-<p>home works!</p>
+<main class="bg-[#0B0A13] text-white">
+  <div class="p-4">
+    <!-- banner -->
+    <div>
+      <!-- <img src="../../../../assets/images/banner.png" alt="" /> -->
+      <app-banner-home />
+    </div>
+    <!-- end banner -->
+
+    <!-- buttons filters -->
+    <div class="pt-4">
+      <div class="btn-toolbar mb-3">
+       <div class="btn-group me-2 mb-1">
+        <button class="bg-white text-black p-2 lg:p-2 rounded-[10px]">
+          <span class="lg:text-sm font-bold text-[10px]"> All Games </span>
+        </button>
+       </div>
+
+       <div class="btn-group me-2 mb-1">
+        <button
+        class="bg-[#191821] p-2 lg:p-2 rounded-[10px] hover:bg-white hover:text-black"
+      >
+        <span class="lg:text-sm font-bold text-[10px]"> Actions </span>
+      </button>
+       </div>
+
+        <div class="btn-group me-2 mb-1">
+          <button
+          class="bg-[#191821] p-2 lg:p-2 rounded-[10px] hover:bg-white hover:text-black"
+        >
+          <span class="lg:text-sm font-bold text-[10px]"> Sports </span>
+        </button>
+        </div>
+
+        <div class="btn-group me-2 mb-1">
+          <button
+          class="bg-[#191821] p-2 lg:p-2 rounded-[10px] hover:bg-white hover:text-black"
+        >
+          <span class="lg:text-sm font-bold text-[10px]"> Mistery </span>
+        </button>
+        </div>
+
+       <div class="btn-group me-2 mb-1">
+        <button
+        class="bg-[#191821] p-2 lg:p-2 rounded-[10px] hover:bg-white hover:text-black"
+      >
+        <span class="lg:text-sm font-bold text-[10px]"> Strategic </span>
+      </button>
+       </div>
+
+       <div class="btn-group me-2 mb-1">
+        <button
+        class="bg-[#191821] p-2 lg:p-2 rounded-[10px] hover:bg-white hover:text-black"
+      >
+        <span class="lg:text-sm font-bold text-[10px]"> Mission </span>
+      </button>
+       </div>
+
+       <div class="btn-group me-2">
+        <button
+          class="bg-[#191821] p-2 lg:p-2 rounded-[10px] hover:bg-white hover:text-black"
+        >
+          <span class="lg:text-sm font-bold text-[10px]"> Multiplayer </span>
+        </button>
+       </div>
+        
+      </div>
+    </div>
+    <!-- end buttons filters -->
+
+    <!-- Game Statistics -->
+    <div>
+      <app-game-statics/>
+    </div>
+    <!-- end Game Statistics -->
+
+    <!-- You will like these -->
+    <div class="pt-12">
+      <div class="flex justify-between">
+        <div>
+          <h2 class="text-xl lg:text-2xl font-bold">You will like these</h2>
+        </div>
+        <a href="#">
+          <span class="text-sm font-semibold"> See All </span>
+        </a>
+      </div>
+
+      <div class="pt-6">
+        <app-slider-1 />
+      </div>
+    </div>
+    <!-- end You will like these -->
+
+    <!-- New releases -->
+    <div class="pt-12 pb-12">
+      <div class="flex justify-between">
+        <div>
+          <h2 class="text-2xl font-bold">New Releases</h2>
+        </div>
+        <div class="justify-end">
+          <a href="#">
+            <span class="text-sm font-semibold"> See All </span>
+          </a>
+        </div>
+      </div>
+      <app-releases/>
+    </div>
+    <!-- end New releases -->
+
+    <!-- Live Games -->
+    <div
+      class="bg-gradient-to-r from-[#3EEC3A0A] to-[#3A61EC1A] rounded-[10px] p-4"
+    >
+      <div class="pt-10 pb-8">
+        <app-live/>
+      </div>
+    </div>
+  </div>
+</main>
