@@ -1,5 +1,5 @@
 <div class="alert alert-dismissible fade show pt-12" role="alert">
-  <h2 class="font-bold text-white text-2xl">Game Statistics</h2>
+  <h2 class="font-bold text-white text-xl lg:text-2xl">Game Statistics</h2>
   <button
     type="button"
     class="btn-close bg-[#FFD80E] rounded-full text-sm h-auto w-2"
@@ -10,25 +10,25 @@
     class="bg-gradient-to-r from-[#3EEC3A0A] to-[#3A61EC1A] rounded-[10px] p-8 mt-10"
   >
     <div class="row mt-2">
-      <div class="col-8">
-        <div class="flex gap-x-1 lg:gap-x-2">
-          <div class="">
+      <div class="col-10">
+        <div class="btn-toolbar mb-3">
+          <div class="btn-group me-2 mb-1">
             <button class="bg-white text-black font-semibold p-2 rounded-[8px]">
               Most Played
             </button>
           </div>
 
-          <div class="">
+          <div class="btn-group me-2 mb-1">
             <button
-              class="bg-[#191821] text-white font-semibold p-2 rounded-[8px]"
+              class="bg-[#191821] hover:bg-white hover:text-black text-white font-semibold p-2 rounded-[8px]"
             >
               Most Pupular
             </button>
           </div>
 
-          <div class="">
+          <div class="btn-group me-2 mb-1">
             <button
-              class="bg-[#191821] text-white font-semibold p-2 rounded-[8px]"
+              class="bg-[#191821] hover:bg-white hover:text-black text-white font-semibold p-2 rounded-[8px]"
             >
               Most Dowloands
             </button>
@@ -36,7 +36,20 @@
         </div>
       </div>
 
-      <div class="col-2"></div>
+      <div class="col-1"></div>
+
+      <div class="col">
+        <div class="dropdown">
+          <button class="btn btn-dark dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            7 days
+          </button>
+          <ul class="dropdown-menu bg-dark text-white">
+            <li><a class="dropdown-item" href="#">1 week</a></li>
+            <li><a class="dropdown-item" href="#">2 weeks</a></li>
+            <li><a class="dropdown-item" href="#">3 weeks</a></li>
+          </ul>
+        </div>
+      </div>
     </div>
 
     <div class="row aling-items-start mt-8">

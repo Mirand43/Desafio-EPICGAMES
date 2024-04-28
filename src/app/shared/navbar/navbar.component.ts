@@ -12,12 +12,11 @@ export class NavbarComponent {
 
   isMenuOpen: boolean = false;
 
-  // toggleMenu(): void {
-  //   const mobileMenu = document.getElementById('mobile-menu');
-  //   mobileMenu.classList.toggle('hidden');
-  // }
+  closeMenu(): void {
+    this.isMenuOpen = false;
+  }
 
-  toggleMenu(): void {
-    this.isMenuOpen = !this.isMenuOpen;
+  openMenu(): void {
+    this.isMenuOpen = true;
   }
 }
