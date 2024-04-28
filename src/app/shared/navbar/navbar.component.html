@@ -106,7 +106,7 @@
         <div class="relative inline-block">
           <img
             src="../../../assets/images/Jonas.png"
-            alt="Avatar"
+            alt="Avatar..."
             class="w-8 rounded-full"
           />
           <div
@@ -131,8 +131,8 @@
     </div>
   </nav>
 
-  <!-- Mobile menu, show/hide based on menu open state. -->
-  <div class="lg:hidden" role="dialog" aria-modal="true">
+<!-- Mobile menu, show/hide based on menu open state. -->
+<div class="lg:hidden" role="dialog" aria-modal="true" [ngClass]="{ 'hidden': isMenuOpen, 'block': !isMenuOpen }">
     <div class="fixed inset-0 z-10"></div>
     <div
       class="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-[#0B0A13] text-white border-l-3 border-[#595959] px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10"
@@ -142,11 +142,11 @@
           <span class="sr-only">EPIC GAMES</span>
           <img
             class="h-8 w-auto"
-            src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
+            src="../../../assets/icons/logo.png"
             alt=""
           />
         </a>
-        <button type="button" class="-m-2.5 rounded-md p-2.5 text-gray-700">
+        <button type="button" class="-m-2.5 rounded-md p-2.5 text-gray-700" (click)="toggleMenu()">
           <span class="sr-only">Close menu</span>
           <svg
             class="h-6 w-6"

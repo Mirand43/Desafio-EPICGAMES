@@ -2,7 +2,8 @@
   <div class="p-4">
     <!-- banner -->
     <div>
-      <img src="../../../../assets/images/banner.png" alt="" />
+      <!-- <img src="../../../../assets/images/banner.png" alt="" /> -->
+      <app-banner-home />
     </div>
     <!-- end banner -->
 
@@ -53,7 +54,9 @@
     <!-- end buttons filters -->
 
     <!-- Game Statistics -->
-    <div class="pt-12">Game Statistics</div>
+    <div>
+      <app-game-statics/>
+    </div>
     <!-- end Game Statistics -->
 
     <!-- You will like these -->
@@ -62,39 +65,13 @@
         <div>
           <h2 class="text-2xl font-bold">You will like these</h2>
         </div>
-
-        <div>
+        <a href="#">
           <span class="text-sm font-semibold"> See All </span>
-        </div>
+        </a>
       </div>
 
-      <div class="flex gap-x-3 lg:gap-x-2 pt-8 justify-between">
-        <div class="bg-gradient-to-r from-[#3EEC3A0A] to-[#3A61EC1A]  w-[552px] h-auto rounded-[10px]">
-          <div class="flex justify-between">
-            <div class="py-6 px-8">
-              <img src="../../../../assets/icons/star-3.png" alt="" />
-
-              <div class="mt-10">
-                <h3 class="text-lg font-bold">Game Strong</h3>
-                <span class="mt-4 text-sm">
-                  Some additional description for this game
-                </span>
-                <br />
-                <button class="bg-white text-black rounded-[8px] p-2 mt-5 cursor-pointer">
-                  Play Now
-                </button>
-              </div>
-            </div>
-
-            <div class="justify-end mt-[54px]">
-              <img
-                src="../../../../assets/images/persona/persona-1.png"
-                alt="imagem..."
-                class="w-[334px] h-[213px]"
-              />
-            </div>
-          </div>
-        </div>
+      <div class="pt-6">
+        <app-slider-1 />
       </div>
     </div>
     <!-- end You will like these -->
@@ -111,231 +88,16 @@
           </a>
         </div>
       </div>
-
-      <div class="flex gap-x-6 pt-8 justify-between">
-        <div>
-          <div>
-            <img
-              src="../../../../assets/images/cards/NewReleases/game1.png"
-              alt="Game..."
-              class="w-60 rounded-[8px]"
-            />
-          </div>
-          <div class="pt-4">
-            <div class="flex justify-between">
-              <div>
-                <button class="bg-white text-black p-2 rounded-[10px]">
-                  <span class="font-bold text-[13px]">Category</span>
-                </button>
-              </div>
-
-              <div class="justify-end">
-                <img
-                  src="../../../../assets/icons/star-2.png"
-                  alt="icon..."
-                  class="w-4"
-                />
-              </div>
-            </div>
-
-            <div class="pt-3">
-              <span class="text-sm font-bold">
-                Title of Game Auto VII Here
-              </span>
-            </div>
-
-            <div class="flex gap-x-3 lg:gap-x-2 pt-2">
-              <div class="mt-1">
-                <img src="../../../../assets/icons/money.png" alt="icon..." />
-              </div>
-              <div>
-                <span class="text[13px]"> US$ 100,786 </span>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div>
-          <div>
-            <img
-              src="../../../../assets/images/cards/NewReleases/game2.png"
-              alt="Game..."
-              class="w-60 rounded-[8px]"
-            />
-          </div>
-          <div class="pt-4">
-            <div class="flex justify-between">
-              <div>
-                <button class="bg-white text-black p-2 rounded-[10px]">
-                  <span class="font-bold text-[13px]">Category</span>
-                </button>
-              </div>
-
-              <div class="justify-end">
-                <img
-                  src="../../../../assets/icons/star-2.png"
-                  alt="icon..."
-                  class="w-4"
-                />
-              </div>
-            </div>
-
-            <div class="pt-3">
-              <span class="text-sm font-bold">
-                Title of Game Auto VII Here
-              </span>
-            </div>
-
-            <div class="flex gap-x-3 lg:gap-x-2 pt-2">
-              <div class="mt-1">
-                <img src="../../../../assets/icons/money.png" alt="icon..." />
-              </div>
-              <div>
-                <span class="text[13px]"> US$ 100,786 </span>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div>
-          <div>
-            <img
-              src="../../../../assets/images/cards/NewReleases/game3.png"
-              alt="Game..."
-              class="w-60 rounded-[8px]"
-            />
-          </div>
-          <div class="pt-4">
-            <div class="flex justify-between">
-              <div>
-                <button class="bg-white text-black p-2 rounded-[10px]">
-                  <span class="font-bold text-[13px]">Category</span>
-                </button>
-              </div>
-
-              <div class="justify-end">
-                <img
-                  src="../../../../assets/icons/star-2.png"
-                  alt="icon..."
-                  class="w-4"
-                />
-              </div>
-            </div>
-
-            <div class="pt-3">
-              <span class="text-sm font-bold">
-                Title of Game Auto VII Here
-              </span>
-            </div>
-
-            <div class="flex gap-x-3 lg:gap-x-2 pt-2">
-              <div class="mt-1">
-                <img src="../../../../assets/icons/money.png" alt="icon..." />
-              </div>
-              <div>
-                <span class="text[13px]"> US$ 100,786 </span>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div>
-          <div>
-            <img
-              src="../../../../assets/images/cards/NewReleases/game4.png"
-              alt="Game..."
-              class="w-60 rounded-[8px]"
-            />
-          </div>
-          <div class="pt-4">
-            <div class="flex justify-between">
-              <div>
-                <button class="bg-white text-black p-2 rounded-[10px]">
-                  <span class="font-bold text-[13px]">Category</span>
-                </button>
-              </div>
-
-              <div class="justify-end">
-                <img
-                  src="../../../../assets/icons/star-2.png"
-                  alt="icon..."
-                  class="w-4"
-                />
-              </div>
-            </div>
-
-            <div class="pt-3">
-              <span class="text-sm font-bold">
-                Title of Game Auto VII Here
-              </span>
-            </div>
-
-            <div class="flex gap-x-3 lg:gap-x-2 pt-2">
-              <div class="mt-1">
-                <img src="../../../../assets/icons/money.png" alt="icon..." />
-              </div>
-              <div>
-                <span class="text[13px]"> US$ 100,786 </span>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div>
-          <div>
-            <img
-              src="../../../../assets/images/cards/NewReleases/game5.png"
-              alt="Game..."
-              class="w-60 rounded-[8px]"
-            />
-          </div>
-          <div class="pt-4">
-            <div class="flex justify-between">
-              <div>
-                <button class="bg-white text-black p-2 rounded-[10px]">
-                  <span class="font-bold text-[13px]">Category</span>
-                </button>
-              </div>
-
-              <div class="justify-end">
-                <img
-                  src="../../../../assets/icons/star-2.png"
-                  alt="icon..."
-                  class="w-4"
-                />
-              </div>
-            </div>
-
-            <div class="pt-3">
-              <span class="text-sm font-bold">
-                Title of Game Auto VII Here
-              </span>
-            </div>
-
-            <div class="flex gap-x-3 lg:gap-x-2 pt-2">
-              <div class="mt-1">
-                <img src="../../../../assets/icons/money.png" alt="icon..." />
-              </div>
-              <div>
-                <span class="text[13px]"> US$ 100,786 </span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      <app-releases/>
     </div>
     <!-- end New releases -->
 
     <!-- Live Games -->
-    <div class="bg-gradient-to-r from-[#3EEC3A0A] to-[#3A61EC1A] rounded-[10px] p-10">
+    <div
+      class="bg-gradient-to-r from-[#3EEC3A0A] to-[#3A61EC1A] rounded-[10px] p-4"
+    >
       <div class="pt-10 pb-8">
-        <div>
-          <h1 class="font-bold">
-            Join LIVE adventures and Show off your Player Skills
-          </h1>
-        </div>
-
-        <div>Carrousel...</div>
+        <app-live/>
       </div>
     </div>
   </div>
